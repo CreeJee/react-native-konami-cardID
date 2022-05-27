@@ -3,9 +3,14 @@
 Konmai Card NFC ID encode/decode library
 
 ## Installation
-
+> node & browser environment
 ```shell
 npm i @kamyu/nfc2card
+```
+
+> react-native environment
+```shell
+npm i big-integer @kamyu/nfc2card
 ```
 
 ## Build
@@ -32,3 +37,4 @@ import { encode, decode } from '@kamyu/nfc2card';
 encode('NFC ID'); // => 'CARD ID'
 decode('CARD ID'); // => 'NFC ID'
 ```
+

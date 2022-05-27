@@ -1,6 +1,12 @@
+/*eslint no-global-assign: "off"*/
+
+
 // https://github.com/DragonMinded/bemaniutils/blob/22e58850047dbe9a8e4d59361ed8d69acca7b238/bemani/common/card.py
 // https://github.com/skogaby/butterfly/blob/master/butterflycore/src/main/java/com/buttongames/butterflycore/cardconv/A.kt
-
+if (typeof BigInt === 'undefined') {
+  // console.log('bigint not supported so adding polyfill');
+  BigInt = require('big-integer');
+}
 const KEY: bigint[] = [
   BigInt(0x20d0d03c),
   BigInt(0x868ecb41),
